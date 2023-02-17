@@ -4,3 +4,5 @@
 .DS_Store
 
 # End of https://www.toptal.com/developers/gitignore/api/web
+
+// Esse arquivo ignora arquivos inuteis no git

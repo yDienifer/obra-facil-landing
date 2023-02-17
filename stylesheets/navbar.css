@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FCFCFC;
+  padding: 20px;
+  box-shadow: 1px 1px 3px rgba(82, 82, 82, 0.514);
+  position: relative;
+  margin: 0;
+}
+
+nav p,
+nav ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav p {
+  color: #D8D6D8;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+nav ul li {
+  display: inline-block;
+}
