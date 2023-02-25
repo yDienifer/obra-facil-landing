@@ -10,8 +10,9 @@
 }
 
 :root {
-  --margin-title: 0.9rem;
   --color-p: #cbc9d2;
+  --sombra: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  --cor-principal: #578d60;
 }
 
 body {
@@ -23,16 +24,37 @@ body {
   align-items: center;
 }
 
+section {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: auto;
+}
+
 /* Conteúdo */
 article,
 form {
   display: block;
 }
 
+/* Introdução */
 article h1 {
-  margin-bottom: var(--margin-title);
+  margin-bottom: 0.9rem;
   font-size: clamp(18px, 1.9rem, 22px);
   font-weight: 600;
+  position: relative;
+}
+
+article h1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 5px;
+  width: 16%;
+  height: 2px;
+  margin-top: 4px;
+  background-color: var(--cor-principal);
 }
 
 article p {
@@ -42,16 +64,10 @@ article p {
   margin-bottom: 2rem;
 }
 
-section {
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-  margin-top: 3rem;
-  margin-bottom: auto;
-}
-
+/* Vídeo */
 iframe {
   border-radius: 3px;
+  box-shadow: var(--sombra);
 }
 
 /* Formulário */
@@ -64,14 +80,20 @@ form {
   border-radius: 5px;
   margin-left: 1.2rem;
   margin-bottom: 3rem;
+  box-shadow: var(--sombra);
 }
 
-form h1 {
+form h1, 
+form span {
   margin-bottom: 1.2rem;
   margin-top: 10px;
   font-size: clamp(18px, 1.9rem, 22px);
   text-transform: uppercase;
   font-weight: 600;
+}
+
+form span {
+  color: var(--cor-principal);
 }
 
 form p {
@@ -95,14 +117,25 @@ form input {
   background-color: #eeedef;
   border: 1px solid rgba(163, 163, 163, 0.726);
   border-radius: 3px;
+  transition: all 0.4s;
 }
 
 form input:nth-of-type(4) {
   text-transform: uppercase;
-  background-color: #578d60;
+  background-color: var(--cor-principal);
   color: white;
   border: none;
   padding: 10px;
+  transition: all 0.5s;
+}
+
+form input:nth-of-type(4):hover {
+  background-color: #000000;
+}
+
+form input:focus {
+  outline: none;
+  border-color: black;
 }
 
 /* Footer */
@@ -111,17 +144,20 @@ footer {
   justify-content: space-between;
   width: 100%;
   margin: -23px 0;
+  background-color: #F2F2F2;
+  padding: 8px 15px;
+  border-radius: 5px;
 }
 
 footer p {
   color: var(--color-p);
-  width: 45%;
+  width: 49%;
   font-size: 14px;
 }
 
 footer span {
   font-weight: bold;
-  color: #6f877e;
+  color: var(--cor-principal);
 }
 
 footer ul li {
