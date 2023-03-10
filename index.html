@@ -1,106 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheets/style.css" />
-    <link rel="stylesheet" href="stylesheets/navbar.css" />
-    <title>Obra fácil -</title>
-  </head>
-  <body>
-    <header>
-      <img src="images/logo.png" alt="Logo Obra Fácil" />
-      <nav>
-          <p>Siga conectado</p>
-          <ul>
-            <li>
-              <a href="#"
-                ><img
-                  src="images/social_media_icons/facebook.png"
-                  alt="Logo Facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="images/social_media_icons/twitter.png"
-                  alt="Logo Twitter"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="images/social_media_icons/yt.png"
-                  alt="Logo Youtube"
-              /></a>
-            </li>
-          </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <section>
-        <article>
-          <h1>Teu lar reformado, energia renovada!</h1>
-          <p>
-            Tornar sua caixa uma demonstração da sua personalidade é nossa
-            paixão.
-          </p>
-          <iframe
-            width="450"
-            height="250"
-            src="https://www.youtube.com/embed/kcCoNengrHI"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </article>
-        <form>
-          <h1>Obras <span>rápidas</span> e <span>baratas</span>!</h1>
-          <p>Somos especialistas em obras, reformas e construção de sonhos.</p>
-          <input type="text" placeholder="Teu nome completo" required />
-          <input
-            type="tel"
-            placeholder="Teu número de telefone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required
-          />
-          <input type="email" placeholder="Teu e-mail" required />
-          <input type="submit" value="Fale conosco" />
-          <p>*Note: Bundle ends in two weeks from now</p>
-        </form>
-      </section>
-      <footer>
-        <p>
-          Todos os direitos reservados Copyright © 2023 Obras Fácil
-          <span>PixFort</span>
-        </p>
-        <ul>
-          <li>
-            <a href="#"
-              ><img
-                src="images/social_media_icons/facebook.png"
-                alt="Logo Instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="images/social_media_icons/twitter.png"
-                alt="Logo Instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="images/social_media_icons/instagram.png"
-                alt="Logo Instagram"
-            /></a>
-          </li>
-        </ul>
-      </footer>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" href="stylesheets/navbar.css" />
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <title>Obra fácil</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo Obra Fácil" class="logo" />
+    <div class="redes-sociais">
+      <span>Siga conectado</span>
+      <ul class="icons">
+        <li><a href="#" title="Youtube" class="icon-youtube"></a></li>
+        <li><a href="#" title="Twitter" class="icon-twitter"></a></li>
+        <li><a href="#" title="Facebook" class="icon-facebook"></a></li>
+      </ul>
     </div>
-  </body>
-  <script type="text/javascript" src="scripts/text.js"></script>
+  </header>
+  <div class="container">
+    <section>
+      <article>
+        <h1>Teu lar reformado, energia renovada!</h1>
+        <p>
+          Tornar sua casa uma demonstração da sua personalidade é nossa
+          paixão.
+        </p>
+        <iframe width="445" height="250" src="https://www.youtube.com/embed/kcCoNengrHI" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </article>
+      <form>
+        <h1>Obras <span>rápidas</span> e <span>baratas</span>!</h1>
+        <p>Somos especialistas em obras, reformas e construção de sonhos.</p>
+        <input type="text" placeholder="Teu nome completo" required />
+        <input type="tel" placeholder="Teu número de telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+        <input type="email" placeholder="Teu e-mail" required />
+        <button type="submit">Fale conosco<ion-icon name="chatbubble-outline"></ion-icon></button> 
+        <p>*Note: Bundle ends in two weeks from now</p>
+      </form>
+    </section>
+    <footer>
+      <p>
+        Todos os direitos reservados Copyright © 2023 Obras Fácil
+        <span>PixFort</span>
+      </p>
+    </footer>
+  </div>
+</body>
+<script type="text/javascript" src="scripts/text.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
