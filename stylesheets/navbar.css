@@ -10,15 +10,15 @@ header {
 }
 
 /* Icons de redes sociais */
-.redes-sociais span {
-  color: #d8d6d8;
-  margin-right: 10px;
-}
-
-/* Icons */
 .redes-sociais,
 .redes-sociais .icons {
   display: flex;
+  align-items: center;
+}
+
+.redes-sociais span {
+  color: #d8d6d8;
+  margin-right: 10px;
 }
 
 .redes-sociais .icons a {

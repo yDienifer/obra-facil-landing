@@ -10,7 +10,7 @@
 }
 
 :root {
-  --color-p: #cbc9d2;
+  --cor-p: #cbc9d2;
   --sombra: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   --cor-principal: #578d60;
 }
@@ -41,7 +41,7 @@ form {
 /* Introdução */
 article h1 {
   margin-bottom: 0.9rem;
-  font-size: clamp(18px, 1.9rem, 22px);
+  font-size: 22px;
   font-weight: 600;
   position: relative;
   cursor: pointer;
@@ -65,8 +65,8 @@ article h1:hover:after {
 }
 
 article p {
-  color: var(--color-p);
-  font-size: clamp(14px, 1.2rem, 16px);
+  color: var(--cor-p);
+  font-size: 16px;
   width: 450px;
   margin-bottom: 2rem;
 }
@@ -94,17 +94,13 @@ form h1,
 form span {
   margin-bottom: 1.2rem;
   margin-top: 10px;
-  font-size: clamp(18px, 1.9rem, 22px);
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 form span {
   color: var(--cor-principal);
-}
-
-form p {
-  color: var(--color-p);
 }
 
 form p:nth-of-type(1) {
@@ -114,7 +110,8 @@ form p:nth-of-type(1) {
 }
 
 form p:nth-of-type(2) {
-  font-size: clamp(10px, 1.1rem, 12px);
+  margin-top: 15px;
+  font-size: 0.8rem;
 }
 
 form input {
@@ -142,12 +139,8 @@ form button:hover {
   font-weight: bold;
 }
 
-form button:hover ion-icon {
-  display: block;
-}
-
-ion-icon {
-  display: none;
+form p {
+  color: var(--cor-p);
 }
 
 form input:focus {
@@ -167,7 +160,7 @@ footer {
 }
 
 footer p {
-  color: var(--color-p);
+  color: var(--cor-p);
   font-size: 14px;
 }
 
