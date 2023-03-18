@@ -27,6 +27,7 @@ body {
 section {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 2.5rem;
   margin-bottom: auto;
@@ -41,7 +42,7 @@ form {
 /* Introdução */
 article h1 {
   margin-bottom: 0.9rem;
-  font-size: 22px;
+  font-size: clamp(14px, 4.8vw, 23px);
   font-weight: 600;
   position: relative;
   cursor: pointer;
@@ -66,7 +67,7 @@ article h1:hover:after {
 
 article p {
   color: var(--cor-p);
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   width: 450px;
   margin-bottom: 2rem;
 }
@@ -94,7 +95,7 @@ form h1,
 form span {
   margin-bottom: 1.2rem;
   margin-top: 10px;
-  font-size: 22px;
+  font-size: clamp(14px, 4.8vw, 23px);
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -104,7 +105,7 @@ form span {
 }
 
 form p:nth-of-type(1) {
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   margin-bottom: 1.8rem;
   width: 85%;
 }
@@ -141,6 +142,7 @@ form button:hover {
 
 form p {
   color: var(--cor-p);
+  font-size: clamp(12px, 2vw, 16px);
 }
 
 form input:focus {
@@ -152,6 +154,8 @@ form input:focus {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
   width: 100%;
   background-color: #f2f2f2;
   padding: 15px;
@@ -161,7 +165,7 @@ footer {
 
 footer p {
   color: var(--cor-p);
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px);
 }
 
 footer span {
@@ -171,4 +175,56 @@ footer span {
 
 footer ul li {
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  section,
+  article,
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  article h1:hover:after {
+    width: 100%;
+  }
+  article p {
+    width: 90%;
+  }
+
+  iframe {
+    width: 90vw;
+    height: 50vw;
+  }
+
+  form,
+  form input,
+  form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+  form input,
+  form button {
+    margin-top: 10px;
+  }
+  form {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer p {
+    width: 90%;
+  }
 }

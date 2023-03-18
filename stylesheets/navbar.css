@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-around;
   background-color: #fcfcfc;
-  width: 100%;
+  width: 100vw;
   padding: 20px;
   box-shadow: 1px 1px 3px rgba(82, 82, 82, 0.514);
   position: relative;
@@ -19,6 +19,7 @@ header {
 .redes-sociais span {
   color: #d8d6d8;
   margin-right: 10px;
+  font-size: clamp(12px, 2vw, 16px);
 }
 
 .redes-sociais .icons a {
@@ -68,4 +69,21 @@ header {
 
 .redes-sociais .icons .icon-facebook:hover {
   background-image: url(../images/social_media_icons/facebook-hover.png);
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 15px 10px;
+  }
+  header img {
+    width: 30%;
+    height: 30%;
+  }
+
+  .redes-sociais .icons .icon-youtube,
+  .redes-sociais .icons .icon-facebook,
+  .redes-sociais .icons .icon-twitter {
+    width: 1.5rem;
+    height: 1.5em;
+  }
 }
