@@ -36,13 +36,15 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </article>
-      <form>
+      <form name="lead" action="#" method="POST">
         <h1>Obras <span>rápidas</span> e <span>baratas</span>!</h1>
         <p>Somos especialistas em obras, reformas e construção de sonhos.</p>
-        <input type="text" placeholder="Teu nome completo" required />
-        <input type="tel" placeholder="Teu número de telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
-        <input type="email" placeholder="Teu e-mail" required />
-        <button type="submit">Fale conosco</button>
+        <span id="mensagem"></span>
+        <input type="text" placeholder="Teu nome completo" name="inputEntradaDeNomeDoForm" required />
+        <input type="tel" placeholder="Teu número de telefone" name="inputEntradaDeTelefoneDoForm" pattern="[0-9]{10,}"
+          required />
+        <input type="email" placeholder="Teu e-mail" name="inputEntradaDeEmailDoForm" required />
+        <button type="submit" id="btnParaEnvioDoForm">Fale conosco</button>
         <p>*Note: Bundle ends in two weeks from now</p>
       </form>
     </section>

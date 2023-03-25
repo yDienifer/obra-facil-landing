@@ -92,7 +92,8 @@ form {
 }
 
 form h1,
-form span {
+form span:nth-of-type(1),
+form span:nth-of-type(2) {
   margin-bottom: 1.2rem;
   margin-top: 10px;
   font-size: clamp(14px, 4.8vw, 23px);
@@ -100,7 +101,8 @@ form span {
   font-weight: 600;
 }
 
-form span {
+form span:nth-of-type(1),
+form span:nth-of-type(2) {
   color: var(--cor-principal);
 }
 
@@ -113,6 +115,12 @@ form p:nth-of-type(1) {
 form p:nth-of-type(2) {
   margin-top: 15px;
   font-size: 0.8rem;
+}
+
+form #mensagem {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
 }
 
 form input {
